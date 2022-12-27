@@ -1,11 +1,14 @@
 #pragma once
+#include <iostream>
+using namespace std;
 
 class CarSpec
 {
 	string* carDetail;
+	string path;
 
 public:
-	CarSpec();
+	CarSpec(string) { this->path = path; }
 
 	void loadFromFile();
 	string get(int value) { return carDetail[value]; };
@@ -13,11 +16,13 @@ public:
 
 class CarInfo
 {
-	string* carName;	
+	string* carName;
+	string path;
+	int len;
 
 public:
-	CarInfo();
+	CarInfo(string);
 
-	void loadFromFile();
-	string get(int value) { return carName[value]; };
+	void loadFromFile(string);	
+	string get(int);
 };
