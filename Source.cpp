@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "CarInfo.h"
 #include "CustomiseCar.h"
 using namespace std;
@@ -12,7 +12,7 @@ int main()
 
 	while (true)
 	{
-		cout << "1. Âûáðàòü àâòî äëÿ êàñòîìèçàöèè\n2. Ïîñìîòðåòü ñâîè àâòî\n--> ";
+		cout << "1. Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð°Ð²Ñ‚Ð¾ Ð´Ð»Ñ ÐºÐ°ÑÑ‚Ð¾Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸\n2. ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ ÑÐ²Ð¾Ð¸ Ð°Ð²Ñ‚Ð¾\n--> ";
 		cin >> user;
 
 		if (user == "1")

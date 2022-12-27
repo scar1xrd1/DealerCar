@@ -1,4 +1,4 @@
-#include "CarInfo.h"
+﻿#include "CarInfo.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -12,7 +12,7 @@ string CarInfo::get(int value)
 void CarInfo::loadFromFile(string path) 
 {
 	ifstream f(path);
-	string line;
+	string line; 
 	int i = 0;
 
 	while (getline(f, line)) i++;

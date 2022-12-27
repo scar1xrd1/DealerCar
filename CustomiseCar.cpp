@@ -1,4 +1,4 @@
-#include "CustomiseCar.h"
+Ôªø#include "CustomiseCar.h"
 #include "CarInfo.h"
 #include <iostream>
 using namespace std;
@@ -11,7 +11,7 @@ CarCustom::CarCustom()
 
 void CarCustom::choiceCar()
 {
-	string details[6] = {}; // wheels color engine gears seats ‚ÌÂ¯ÌËÂ 
+	string details[6] = {}; // wheels color engine gears seats –≤–Ω–µ—à–Ω–∏–µ 
 
 	string tyre[] = {};
 	string disc[] = {};
@@ -28,7 +28,7 @@ void CarCustom::choiceCar()
 
 	while (true)
 	{
-		cout << "¬˚·ÂËÚÂ ˆËÙÛ\n";
+		cout << "–í—ã–±–µ—Ä–∏—Ç–µ —Ü–∏—Ñ—Ä—É\n";
 		for (int i = 0; i < car.get_len(); i++)
 		{
 			cout << i+1 << ". " << car.get(i) << endl;
@@ -37,9 +37,9 @@ void CarCustom::choiceCar()
 
 		while (true)
 		{
-			while (!(cin >> u) || (cin.peek() != '\n')) { cin.clear(); while (cin.get() != '\n'); cout << "\n“ÓÎ¸ÍÓ ˆËÙ‡ÏË!\n\n--> "; }
+			while (!(cin >> u) || (cin.peek() != '\n')) { cin.clear(); while (cin.get() != '\n'); cout << "\n–¢–æ–ª—å–∫–æ —Ü–∏—Ñ—Ä–∞–º–∏!\n\n--> "; }
 			if (u >= 0 && u <= car.get_len()) break;
-			else cout << "\nÕÂ‚ÂÌ˚È ‚‚Ó‰!\n\n-->";
+			else cout << "\n–ù–µ–≤–µ—Ä–Ω—ã–π –≤–≤–æ–¥!\n\n-->";
 		}
 		break;
 	}
@@ -50,14 +50,14 @@ void CarCustom::choiceCar()
 	{
 		srand(time(0));
 
-		cout << "¬˚·ÂËÚÂ ˝ÎÂÏÂÌÚ ÍÓÚÓ˚È ıÓÚËÚÂ ËÁÏÂÌËÚ¸\n1.  ÓÎ∏Ò‡\n2. ÷‚ÂÚ ‡‚ÚÓ\n3. ƒ‚Ë„‡ÚÂÎ¸\n4.  ÓÓ·Í‡ ÔÂÂ‰‡˜\n5. ¬ÌÂ¯ÌËÂ ÏÓ‰ËÙËÍ‡ˆËË\n--> ";
+		cout << "–í—ã–±–µ—Ä–∏—Ç–µ —ç–ª–µ–º–µ–Ω—Ç –∫–æ—Ç–æ—Ä—ã–π —Ö–æ—Ç–∏—Ç–µ –∏–∑–º–µ–Ω–∏—Ç—å\n1. –ö–æ–ª—ë—Å–∞\n2. –¶–≤–µ—Ç –∞–≤—Ç–æ\n3. –î–≤–∏–≥–∞—Ç–µ–ª—å\n4. –ö–æ—Ä–æ–±–∫–∞ –ø–µ—Ä–µ–¥–∞—á\n5. –í–Ω–µ—à–Ω–∏–µ –º–æ–¥–∏—Ñ–∏–∫–∞—Ü–∏–∏\n--> ";
 		cin >> user;
 
 		if (user == "1")
 		{
 			while (true)
 			{
-				cout << "1. –ÂÁËÌ‡\n2. ƒËÒÍ\n3. –‡ÁÏÂ ÍÓÎÂÒ‡\n--> ";
+				cout << "1. –†–µ–∑–∏–Ω–∞\n2. –î–∏—Å–∫\n3. –†–∞–∑–º–µ—Ä –∫–æ–ª–µ—Å–∞\n--> ";
 				cin >> user;
 
 				if (user == "1")
@@ -78,7 +78,7 @@ void CarCustom::choiceCar()
 		{
 			while (true)
 			{
-				cout << "1. ÷‚ÂÚ\n2. ÷‚ÂÚ\n3. ÷‚ÂÚ\n--> ";
+				cout << "1. –¶–≤–µ—Ç\n2. –¶–≤–µ—Ç\n3. –¶–≤–µ—Ç\n--> ";
 				cin >> user;				
 			}
 		}
@@ -89,6 +89,6 @@ void CarCustom::showCar()
 {
 	if (car_amount == 0)
 	{
-		cout << "\n¬˚ Â˘∏ ÌÂ ÒÓÁ‰‡ÎË ÌË Ó‰ÌÛ Ï‡¯ËÌÛ!\n\n";
+		cout << "\n–í—ã –µ—â—ë –Ω–µ —Å–æ–∑–¥–∞–ª–∏ –Ω–∏ –æ–¥–Ω—É –º–∞—à–∏–Ω—É!\n\n";
 	}
 }
