@@ -25,4 +25,5 @@ public:
 
 	void loadFromFile(string);	
 	string get(int);
+	int get_len() { return len; }
 };

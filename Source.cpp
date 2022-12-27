@@ -1,5 +1,6 @@
 #include <iostream>
 #include "CarInfo.h"
+#include "CustomiseCar.h"
 using namespace std;
 
 int main()
@@ -7,8 +8,7 @@ int main()
 	setlocale(LC_ALL, "ru");
 	string user;
 
-	CarInfo carInfo("Cars/Name/name_car.txt");
-	cout << carInfo.get(0) << endl;
+	CarCustom car;
 
 	while (true)
 	{
@@ -17,7 +17,11 @@ int main()
 
 		if (user == "1")
 		{
-
+			car.choiceCar();
+		}
+		else if (user == "2")
+		{
+			car.showCar();
 		}
 	}
 }
