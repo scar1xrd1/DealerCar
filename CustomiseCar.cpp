@@ -15,7 +15,7 @@ void CarCustom::choiceCar()
 
 	string tyre[] = {};
 	string disc[] = {};
-	string size_tyre[] = {};
+	string size_tyre[] = {}; 
 	string color[] = {};
 	string engine[] = {};
 	string seat[] = {};
